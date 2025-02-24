@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiWebUnlock</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/android-fastboot/dist/fastboot.mjs" type="module"></script> 
+    <script src="script.js" defer></script> 
+    <link rel="icon" type="image/x-icon" href="https://www.mi.com/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h2>MiWebUnlock</h2>
+        <form id="unlockForm" action="">
+            <div class="form-group">
+                <label for="login">Mi Account</label>
+                <label for="login">(Email / Login / Phone Number)</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="Start Unlock">
+        </form>
+    </div>
+    <noscript>
+        <div class="noscript-popup">
+            JavaScript is disabled in your browser!<br>
+            Please enable JavaScript to use MiWebUnlock.
+        </div>
+    </noscript>
+</body>     
+</html>
