@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiWebUnlock</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <script src="../node_modules/android-fastboot/dist/fastboot.mjs" type="module"></script> 
     <script src="script.js" defer></script> 
-    <link rel="icon" type="image/x-icon" href="https://www.mi.com/favicon.ico">
+    <script src="unlock.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +13,7 @@
         <form id="unlockForm" action="">
             <div class="form-group">
                 <label for="login">Mi Account</label>
-                <label for="login">(Email / Login / Phone Number)</label>
+                <label for="login">ㅤEmail | Login | Phone Number</label>
                 <input type="text" id="login" name="login" required>
             </div>
             <div class="form-group">
@@ -24,6 +22,9 @@
             </div>
             <input type="submit" value="Start Unlock">
         </form>
+        <a href="https://github.com/loxetra/MiWebUnlock" target="_blank">
+            <img src="assets/github.svg" alt="GitHub" class="github-icon">
+        </a>
     </div>
     <noscript>
         <div class="noscript-popup">

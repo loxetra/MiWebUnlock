@@ -68,6 +68,20 @@ input[type="submit"]:hover {
     background-color: #e67e22; 
 }
 
+.github-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px; 
+    height: 40px; 
+    opacity: 0.7; 
+    transition: opacity 0.3s;
+}
+
+.github-icon:hover {
+    opacity: 1; 
+}
+
 .noscript-popup {
     display: block; 
     position: fixed;
